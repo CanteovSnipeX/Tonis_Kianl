@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.ServicioshasEmpleados">
+   <children>
+      <AnchorPane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label layoutX="241.0" layoutY="9.0" text="Servicio has Empleado" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnNuevo" layoutX="35.0" layoutY="355.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #08CAD3;" text="Nuevo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="191.0" layoutY="355.0" mnemonicParsing="false" onAction="#editar" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #08CAD3;" text="Editar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnReportar" layoutX="346.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelar" style="-fx-background-color: #08CAD3;" text="Reporte ">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="505.0" layoutY="355.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #08CAD3;" text="Eliminar">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TableView fx:id="tblServiciohasEmpleado" layoutX="15.0" layoutY="194.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="150.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="colCodigoServicioshasEmpleado" prefWidth="52.0" text="Codigo" />
+          <TableColumn fx:id="colFechaEvento" prefWidth="95.0" text="Fecha  Evento" />
+            <TableColumn fx:id="colHoraEvento" prefWidth="107.0" text="Hora Evento" />
+            <TableColumn fx:id="colLugarEvento" prefWidth="108.0" text="Lugar Evento" />
+            <TableColumn fx:id="colCodigoServicio" prefWidth="100.0" text="Codigo Servicio" />
+            <TableColumn fx:id="colCodigoEmpleado" prefWidth="108.0" text="Codigo Empleado" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <TextField fx:id="txtCodigoServicioshasEmpleado" layoutX="104.0" layoutY="54.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtHoraEvento" layoutX="104.0" layoutY="133.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtLugarEvento" layoutX="394.0" layoutY="54.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <ComboBox fx:id="cmbCodigoServicio" layoutX="394.0" layoutY="95.0" prefWidth="150.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="cmbCodigoEmpleado" layoutX="394.0" layoutY="133.0" prefWidth="150.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ComboBox>
+      <GridPane fx:id="grpFechaEvento" layoutX="104.0" layoutY="93.0" prefHeight="30.0" prefWidth="149.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="35.0" layoutY="58.0" text="Codigo">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="31.0" layoutY="100.0" text="Fecha Evento">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="35.0" layoutY="137.0" text="Hora Evento">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="282.0" layoutY="58.0" text="Lugar Evento">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="282.0" layoutY="100.0" text="Codigo Servicio">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="282.0" layoutY="137.0" text="Codigo Empleado">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="5.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Retroceso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="555.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

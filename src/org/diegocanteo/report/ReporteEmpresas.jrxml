@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteEmpresas" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="28b5b40b-01b7-4ed8-881e-456254ae7274">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[call sp_listarEmpresas]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="572" height="79" uuid="862775bb-0ad2-439e-b483-882735d0cf6d"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tonys Kinal\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Barra Naranja.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="49" y="3" width="115" height="27" forecolor="#FFFFFF" uuid="2d12f4b2-c0c0-4147-9e2c-17f26ac882c0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tonys  Kinal ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="49" height="30" uuid="1d7c706d-d14f-413b-b330-b7e63af58382"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tonys Kinal\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Icono.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="186" y="30" width="204" height="35" uuid="ce67c60e-40c6-4be8-97d2-322241e9f2a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reportes Empresa]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="34" width="572" height="1" forecolor="#00FFFF" uuid="e2a82ff8-4d17-402b-b2af-f12e4f802999"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="60" width="572" height="1" forecolor="#00FFFF" uuid="8c2621b3-e0f3-4b85-af44-fbb3f5e069ad"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="10">
+				<reportElement x="166" y="16" width="115" height="20" forecolor="#00FFFF" uuid="f151ed63-3e2e-4d27-8288-895922285944"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="166" y="17" width="113" height="19" uuid="2bd26729-5ff3-41ab-a878-e8f469214c75"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="36" y="17" width="115" height="20" forecolor="#FF6600" uuid="adf90275-8bd9-4ace-8f73-d3f7e3026c5c"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="303" y="17" width="115" height="20" forecolor="#FF6600" uuid="dda4b1db-4471-4b9a-9955-404f08b778d0"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="443" y="17" width="115" height="20" forecolor="#00FFFF" uuid="c3d238bb-f51a-46e0-b48b-f4a766b6a272"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="36" y="17" width="115" height="20" uuid="13cdeaf2-f831-49ec-a307-faaf627871f3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Codigo Empresas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="17" width="115" height="20" uuid="a115de1c-370b-4d38-96f9-b51284d04e55"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="17" width="115" height="20" uuid="4294a8aa-7cb4-4d4e-8f67-edc030ef1f6c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefono]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="166" y="12" width="113" height="20" uuid="989d85df-4f2a-40f5-a2cc-7a473c83bfd3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="12" width="115" height="20" uuid="80602efc-4692-496d-a6b2-a76feebeae48"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="12" width="115" height="20" uuid="b2c36662-29ce-4054-a4e7-4a2848fd3aec"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="45" width="572" height="1" forecolor="#00FFFF" uuid="9b767013-568e-4cb8-99b5-21067134979a"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="36" y="12" width="115" height="20" uuid="6ee7a17c-606f-4a56-913e-050228610671"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="572" height="20" uuid="8cf54c73-e3e9-4d94-869d-69f2006213a1"/>
+				<imageExpression><![CDATA["C:\\Users\\DiegoCanteo\\Documents\\NetBeansProjects\\Tonys Kinal\\Tony's_kinal_2016532\\src\\org\\diegocanteo\\image\\Barra Naranja.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="186" y="0" width="216" height="20" forecolor="#FFFFFF" uuid="ce6bae00-cb0b-4fec-bace-995fca43cd5b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[ Obró mucho el que nada dejó para mañana]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

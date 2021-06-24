@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="600.0" style="-fx-background-color: #FB8C00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegocanteo.controller.ServicioshasPlatos">
+   <children>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0" style="-fx-background-color: #4A413D;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="207.0" layoutY="4.0" prefHeight="20.0" prefWidth="166.0" text="ServicioshasPlatos" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="28.0" layoutX="14.0" layoutY="3.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Retroceso.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblServicioshasPlatos" layoutX="14.0" layoutY="137.0" onMouseClicked="#seleccionarElemento" prefHeight="166.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="colCodigoServicio" prefWidth="298.0" text="CodigoServicio" />
+            <TableColumn fx:id="colCodigoPlatos" prefWidth="275.0" text="CodigoPlatos" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <ComboBox fx:id="cmbCodigoServico" layoutX="94.0" layoutY="77.0" prefWidth="150.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="cmbCodigoPlato" layoutX="364.0" layoutY="77.0" prefWidth="150.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="129.0" layoutY="41.0" text="CodigoServicio">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="404.0" layoutY="41.0" text="CodigoPlatos">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="34.0" layoutX="559.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
